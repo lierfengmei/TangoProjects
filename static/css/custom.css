@@ -1,0 +1,431 @@
+@font-face{
+	       font-family:'Glyphicons';
+           src:url(../fonts/glyphicons-halflings-regular.eot);
+          }
+    .homePageIcon {
+      border: 5px solid #f1f1f1;
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      margin: auto;
+    }
+    
+    .homePageIconDiv h1 {
+      font-weight: 100;
+      font-size: 33px;
+    }
+    
+    .homePageIconDiv p {
+      font-weight: 200
+    }
+    
+    .homePageIcon > img {
+      margin-left: 31px;
+      margin-top: 31px;
+      width: 68px;
+    }
+    
+    .text_center {
+      text-align: center;
+    }
+    
+    .rightBorder {
+      border-right: 1px solid #eaeaea;
+    }
+    
+    .serviceSection {
+      margin-bottom: 40px;
+      margin-top: 40px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .pageToplayer {
+      background: #eaeaea;
+      height: 15px
+    }
+    
+    .navbar-brand {
+      height: 70px;
+      margin-top: -10px;
+    }
+    
+    .nav {
+      float: right;
+      margin-top: -3px;
+    }
+    @media (max-width:767px)
+    {
+      .nav{
+        float: none;
+        text-align: center;
+        background-color: white;
+        color:black !important;
+      }
+       .nav > li > a {
+        color: black !important;
+      }
+    }
+    
+    .nav > li > a {
+      color: white;
+    }
+    
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.01);
+      border-bottom: 3px solid darkorange;
+    }
+    
+    .carousel {
+      height: 440px;
+    }
+    
+    .carousel-caption {
+      z-index: 10;
+    }
+    
+    .carousel .item {
+      height: 440px;
+      background-color: #777;
+    }
+    
+    .carousel-inner > .item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 440px;
+    }
+    
+    footer {
+      background: #0f1721;
+      line-height: 50px;
+      color: #9e9e9e;
+      font-size: 12px;
+    }
+    
+    .parallax-window {
+      min-height: 450px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .phoneImage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+    
+    .app_about {
+      height: 120px;
+      color: white
+    }
+    
+    .app_about > img {
+      width: 12%;
+      float: left;
+      margin-top: 40px;
+    }
+    
+    .app_about > span {
+      font-size: 70px;
+      margin-top: 20px;
+    }
+    
+    .app_about > div {
+      float: right;
+      width: 82%;
+      padding-left: 10px;
+    }
+    
+    .rowContet {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .demof {
+      /*border: 1px solid #ccc;*/
+      margin: 25px 0;
+      margin-top: 10px;
+    }
+    
+    .demof ul {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .demof li {
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .demof li.odd {
+      background: #fafafa;
+    }
+    
+    .demof li:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    
+    .demof img {
+      float: left;
+      width: 100px;
+      margin: 5px 15px 0 0;
+    }
+    
+    .demof a {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      /*color: #06f;*/
+    }
+    
+    .demof p {
+      margin: 15px 0 0;
+      font-size: 14px;
+    }
+    
+    .aboutCompany {
+      line-height: 35px;
+      margin-top: 20px;
+    }
+    
+    .aboutCompany p {
+      color: #8c8c8c;
+      font-size: 10px;
+    }
+    
+    .usefulLink {
+      line-height: 35px;
+    }
+    
+    .usefulLink a {
+      color: #8c8c8c;
+      font-size: 11px;
+    }
+    
+    .aboutCompany span,
+    .usefulLink span {
+      float: left;
+      color: #8c8c8c;
+      margin-left: 10px;
+      font-size: 20px;
+      margin-top: 7px;
+      margin-right: 10px;
+    }
+    
+    .usefulLink span {
+      font-size: 12px;
+      margin-top: 11px;
+    }
+    
+    .gallery img {
+      width: 75px;
+      padding: 5px 5px 5px 0;
+    }
+    
+    .gallery h4 {
+      color: #8c8c8c;
+    }
+    
+    .navbar {
+      border: 0;
+      height: 80px;
+    }
+    
+    .change {
+      background: white;
+      border-bottom: 1px solid #d4d4d4;
+    }
+    
+    .change ul > li > a {
+      color: #464646
+    }
+    
+    .slidderBanner {
+      height: 65px;
+      position: absolute;
+      width: 100%;
+      margin-top: 375px;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+    
+    .slidderBanner img {
+      margin: 17px;
+      width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+    
+    .carousel-indicators {
+      bottom: -13px;
+      opacity: 0.6;
+    }
+    
+    .carousel-indicators li {
+      border-color: black;
+    }
+    
+    .carousel-indicators .active {
+      background-color: black
+    }
+    
+    .aboutSection {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    
+    .aboutSection div > h1 {
+      border-bottom: 2px #ff9700 solid;
+      font-weight: 100;
+      padding-bottom: 10px;
+      width: 285px;
+    }
+    
+    .aboutSection div > p {
+      text-align: justify;
+    }
+    
+    .aboutTopLayer,.candoTopLayer,.serviceTopLayer,.faqTopLayer {
+      background-image: url("../asset/img/about.jpg");
+      margin-top: 80px;
+      min-height: 200px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .candoTopLayer {
+      background-image: url("../asset/img/cando.jpg");
+    }
+    .serviceTopLayer {
+      background-image: url("../asset/img/service.jpg");
+    }
+    
+    .faqTopLayer {
+      background-image: url("../asset/img/faq.jpg");
+    }
+    
+    .navhelp {
+      margin-top: 90px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-left: 200px;
+    }
+    .navbar-toggle {
+      color:#ff9700
+    }
+    .slider{
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .candoRow {
+       margin-bottom: 20px;  
+       margin-top: 20px;
+       1border-top: 1px solid #d6d6d6;
+    }
+    .candoRow img{
+      margin-top: 20px;
+	  height: 80px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .candoRow h1{
+      font-weight: 100;
+      font-size: 33px;
+    }
+    .candoRow p {
+      font-weight: 200
+    }
+    .callbacks_nav {
+  	  position: absolute;
+  	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  	  top: 52%;
+  	  left: 10px;
+  	  opacity: 0.7;
+  	  z-index: 3;
+  	  text-indent: -9999px;
+  	  overflow: hidden;
+  	  text-decoration: none;
+  	  height: 61px;
+  	  width: 27px;
+  	  background: transparent url("img/arrow.png") no-repeat left top;
+  	  margin-top: -45px;
+	  }
+
+	.callbacks_nav:active {
+	  opacity: 1.0;
+	  }
+
+	.callbacks_nav.next {
+	  left: auto;
+	  background-position: right top;
+	  right: 10px;
+  	}
+  	.borderCando{
+  		border-top: 1px solid #d6d6d6;
+	    width: 85%;
+	    margin-left: auto;
+	    margin-right: auto;
+  	}
+  	#sliderCando{
+  	  -webkit-box-shadow: 0px 8px 18px -6px rgb(234, 234, 234);
+      -moz-box-shadow: 0px 8px 18px -6px rgb(234, 234, 234);
+      box-shadow: 0px 8px 18px -6px rgb(234, 234, 234);
+  	}
+    .panel{
+      -webkit-box-shadow: 0 0 0;
+      box-shadow: 0 0 0;
+    }
+    .panel-body{
+      padding: 10px 27px 10px 27px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      text-align: justify;
+    }
+  	.panel-heading {
+       cursor: pointer;
+       padding: 17px 25px;
+       border-bottom: 1px solid #ececec !important;
+       border: 1px solid #ececec;
+       border-left: orange 3px solid;
+	  }
+	.accordion-toggle:after {
+    content: "";
+    background: url("img/minus.png");
+    background-size: 20px 20px;
+    float: right;
+    color: inherit;
+    height: 20px;
+    width: 20px;
+	}
+	.panel-heading.collapsed{
+	    border-left : #ececec 1px solid;
+	}
+	.panel-heading.collapsed .accordion-toggle:after {
+    content: "";
+    background: url("img/plus.png");
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+	}
+  .media{
+        margin-top: 45px;
+  }
+  .media-body {
+    color:white;
+  }
+  video {
+    background-color: white;
+    border-radius: 3px;
+     min-height: 160px;
+   }
+
