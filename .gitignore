@@ -1,0 +1,5 @@
+*.pdf
+*.pyc
+*.key
+*.DS_Store
+db.sqlite3
