@@ -4,10 +4,10 @@ from rango.models import Category,Page
 
 class CategoryForm(forms.ModelForm):
     name = forms.CharField(max_length=128,
-                           help_tex="Please enter the category name.")
+                           help_text="Please enter the category name.")
     views = forms.IntegerField(widget=forms.HiddenInput(),initial=0)
     likes = forms.IntegerField(widget=forms.HiddenInput(),initial=0)
-    slug = forms.CharField(widget=forms.HiddenInput(),required=Flase)
+    slug = forms.CharField(widget=forms.HiddenInput(),required=False)
 
     # An inline class to privide additional information on the form
     class Meta:
@@ -33,5 +33,19 @@ class PageForm(forms.ModelForm):
         # we can either exclude the category field form the form, or specify the fields
         # like this: fields = ('title','url','views')
         exclude = ('category',)
+
+    # URL Checking
+    def clean(self):
+        cleaned_data = self.cleaned_data
+        url = cleaned_data.get('url')
+
+        # If url is not empty and doesn't start with http://
+        # then prepend "http://"
+        if url and not url.startwith('http://'):
+            url = 'http://'+url
+            cleaned_data['url'] = url
+
+            return cleaned_data
+
 
 
