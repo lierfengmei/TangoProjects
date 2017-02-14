@@ -16,7 +16,8 @@
 		</ul>
 
 <div>
-  <a href="/rango/category/{{category.slug}}/add_page/">Add Page</a>
+  <!--a href="/rango/category/{{category.slug}}/add_page/">Add Page</a-->
+  <a href="{% url 'add_page' category.slug%}">Add Page</a>
 </div>
 
 	{% else %}
@@ -24,7 +25,8 @@
 	{% endif %}
 </div>
 <div>
-  <a href="/rango/"> Return Index Page </a>
+  <!--a href="/rango/"> Return Index Page </a-->
+  <a href="{% url 'index' %}">Return Index Page</a><br/>
 </div>
 </body>
 </html>
