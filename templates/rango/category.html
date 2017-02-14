@@ -1,4 +1,38 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+Show Category Detials
+{% endblock %}
+
+{% block header1_block %}
+Pages in Category {{category.slug}}
+{% endblock %}
+
+{% block body_block %}
+	{% if category %}
+	<h1>{{ category.name }}</h1>
+		<ul>
+		{% for page in pages %}
+		<li> <a href="{{ page.url }}">{{ page.title }} </a> </li>
+		{% endfor %}
+		</ul>
+
+<div>
+  <a href="{% url 'add_page' category.slug%}">Add Page</a>
+</div>
+
+	{% else %}
+	<strong> The specified category does not exist! </strong>
+	{% endif %}
+{% endblock %}
+
+
+
+
+
+
+<!--DOCTYPE html>
 <html>
 <head>
 	<title>
@@ -16,7 +50,6 @@
 		</ul>
 
 <div>
-  <!--a href="/rango/category/{{category.slug}}/add_page/">Add Page</a-->
   <a href="{% url 'add_page' category.slug%}">Add Page</a>
 </div>
 
@@ -25,8 +58,7 @@
 	{% endif %}
 </div>
 <div>
-  <!--a href="/rango/"> Return Index Page </a-->
   <a href="{% url 'index' %}">Return Index Page</a><br/>
 </div>
 </body>
-</html>
+</html-->

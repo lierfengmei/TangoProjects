@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head lang="en">
+        <meta charset="utf-8"/>
+        
+<title>Rango-
+    {% block title_block %}
+    {% endblock %}
+</title>
+</head>
+<h1>
+    {% block header1_block %}
+    {% endblock %}
+</h1>
+<br/>
+<hr/>
+<br/>
+<body>
+<div>
+{% block body_block %}
+	This is body_block's default content.
+{% endblock %}
+</div>
+
+<div>
+        <br/>
+    <hr/>
+    <br/>
+
+<ul>
+	<li><a href="{% url 'add_category' %}">Add New Category</a></li>
+	<li><a href="{% url 'about' %}">About</a></li>
+	<li><a href="{% url 'index' %}">Index</a></li>
+</ul>	
+</div>
+</body>
+</html>
